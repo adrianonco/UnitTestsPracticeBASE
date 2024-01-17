@@ -68,7 +68,13 @@ class testShoppingCartPriceInDefaultCurrency {
 	
 	@Test
 	void addProductItemAndCheckPrice() {
-		fail("To be implemented autonomously");
+		//Add product item
+				ProductItem p5 = new ProductItem("Chaqueta", 40 , 1);
+				sc1.addProductItem(p5);
+		// Check price
+				assertEquals(126, sc1.totalPrice().getAmount());
+		// fail("To be implemented autonomously");
+		
 	}
 	
 	@Test
