@@ -79,7 +79,11 @@ class testShoppingCartPriceInDefaultCurrency {
 	
 	@Test
 	void removeProductItemAndCheckPrice() {
-		fail("To be implemented autonomously");
+		//Remove product item
+				sc2.removeProductItem(1);	
+		// Check price
+				assertEquals(80, sc2.totalPrice().getAmount());
+		// fail("To be implemented autonomously");
 	}
 	
 
