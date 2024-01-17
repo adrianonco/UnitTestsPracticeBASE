@@ -33,7 +33,7 @@ class testShoppingCartPriceInDefaultCurrency {
 		//Creamos un shopping cart
 				sc1 = new ShoppingCart("MyFirstShoppingCart");
 						
-				//Creamos y añadimos product items
+				//Creamos y aï¿½adimos product items
 				ProductItem p1 = new ProductItem("Camiseta", 18 , 1);
 				ProductItem p2 = new ProductItem("Pantalones", 68, 1);
 				sc1.addProductItem(p1);
@@ -62,7 +62,8 @@ class testShoppingCartPriceInDefaultCurrency {
 	
 	@Test
 	void testPriceWithQuantities() {
-		fail("To be implemented in class as demonstration");
+		assertEquals(98, sc2.totalPrice().getAmount());
+		//To be implemented in class as demonstration");
 	}
 	
 	@Test
